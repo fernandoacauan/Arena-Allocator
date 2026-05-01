@@ -13,6 +13,8 @@
 // Definitions
 //-----------------------------------------------------------------------------
 
+extern void* __cdecl memset( void*, int, size_t );
+
 struct block_s
 {
 	char *					base;
@@ -152,12 +154,7 @@ char* CArena::Calloc( size_t size, size_t arena )
 		return nullptr;
 	}
 
-	char *start	= ptr;
-	char *end	= ptr + size;
-
-	while ( start < end ) {
-		*start++ = 0;
-	}
+	memset( ptr, 0, sizeof(ptr) );
 
 	return ptr;
 }
