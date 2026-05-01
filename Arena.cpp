@@ -13,7 +13,7 @@
 // Definitions
 //-----------------------------------------------------------------------------
 
-extern void* __cdecl memset( void*, int, size_t );
+extern "C" void* __cdecl memset( void*, int, size_t );
 
 struct block_s
 {
