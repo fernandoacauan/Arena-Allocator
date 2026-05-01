@@ -8,7 +8,7 @@ A high-performance, block-based **Arena Allocator** implemented in C++. This pro
 *   **O(1) Allocation**: Memory allocation is performed by simply incrementing a pointer, providing constant time performance.
 *   **Automatic Alignment**: Ensures all allocated memory is properly aligned for the target architecture using a dedicated `union align` logic.
 *   **Mass Deallocation**: Entire memory arenas can be freed at once, eliminating the need to track or delete individual objects manually.
-*   **Multiple Independent Arenas**: Supports a pool of up to 3 independent arenas for different subsystems.
+*   **Multiple Independent Arenas**: Supports a configurable pool of independent arenas (default is 3) for different subsystems.
 *   **Placement New Support**: Compatible with C++ object construction directly into arena-managed memory.
 
 ## Technical Architecture
