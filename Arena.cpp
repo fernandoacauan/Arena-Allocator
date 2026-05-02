@@ -154,7 +154,7 @@ char* CArena::Calloc( size_t size, size_t arena )
 		return nullptr;
 	}
 
-	memset( ptr, 0, sizeof(ptr) );
+	memset( ptr, 0, size );
 
 	return ptr;
 }
