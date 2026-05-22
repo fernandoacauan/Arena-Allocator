@@ -11,6 +11,13 @@ jobs:
         runs-on: windows-latest
         
         steps:
+        
+            - name: Setup NuGet
+              uses: NuGet/setup-nuget@v4
+              
+            - name: Restore NuGet Packages
+              run: nuget restore "Arena Allocator.sln"
+              
             - name: Checkout
               uses: actions/checkout@v4
               
