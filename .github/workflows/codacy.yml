@@ -1,0 +1,9 @@
+---
+exclude_paths:
+  - "x64/**"
+  - "Debug/**"
+  - "Release/**"
+  - ".vs/**"
+  - "*.md"
+            
+            

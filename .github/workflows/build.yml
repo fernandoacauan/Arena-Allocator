@@ -20,4 +20,7 @@ jobs:
             - name: Compile project (Release & x64)
               run: msbuild "Arena Allocator.sln" /p:Configuration=Release /p:Platform=x64
             
+            - name: Run Unit Tests
+              run: .\x64\Release\ArenaTests.exe
+            
             

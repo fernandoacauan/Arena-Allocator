@@ -39,8 +39,12 @@ public:
 	static void				Free( size_t arena );
 };
 
+#ifndef __PLACEMENT_NEW_INLINE
+#define __PLACEMENT_NEW_INLINE
 
 inline void *operator new( size_t, void *ptr )
 {
 	return ptr;
 }
+
+#endif

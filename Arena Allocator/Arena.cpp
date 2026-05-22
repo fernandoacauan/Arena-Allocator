@@ -29,7 +29,7 @@ union align
 	int						( *f )(void);
 };
 
-static inline int RoundUp( int x, int y )
+static inline size_t RoundUp( size_t x, size_t y )
 {
 	return ( x + (y - 1) ) & ~( y - 1 );
 }
