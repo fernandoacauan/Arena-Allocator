@@ -1,5 +1,6 @@
 # Arena Allocator
 [![MSBuild C++](https://github.com/fernandoacauan/Arena-Allocator/actions/workflows/build.yml/badge.svg)](https://github.com/fernandoacauan/Arena-Allocator/actions/workflows/build.yml) 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/ef9c11e516564800aa45622b66f3c8a6)](https://app.codacy.com?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 > **Author: Fernando A.**
 
 A high-performance, block-based **Arena Allocator** implemented in C++. This project provides a fast and efficient way to manage memory in performance-critical applications by allocating large contiguous blocks and serving memory linearly.
