@@ -16,7 +16,7 @@ jobs:
               uses: NuGet/setup-nuget@v4
               
             - name: Restore NuGet Packages
-              run: nuget restore "Arena Allocator.sln"
+              run: nuget restore
               
             - name: Checkout
               uses: actions/checkout@v4
