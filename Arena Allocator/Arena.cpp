@@ -6,7 +6,7 @@
 // Copyright (C) Fernando A. All Rights Reserved.
 //-----------------------------------------------------------------------------
 #include "Arena.h"
-
+#include <string.h>
 
 
 //-----------------------------------------------------------------------------
@@ -152,12 +152,7 @@ char* CArena::Calloc( size_t size, size_t arena )
 		return nullptr;
 	}
 
-	char *start	= ptr;
-	char *end	= ptr + size;
-
-	while ( start < end ) {
-		*start++ = 0;
-	}
+	memset( ptr, 0, size );
 
 	return ptr;
 }
